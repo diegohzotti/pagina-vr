@@ -1,0 +1,591 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    
+    background: rgb(51,77,236);
+    background: linear-gradient(0deg, rgba(51,77,236,1) 0%, rgba(98,182,233,1) 76%, rgba(27,200,255,1) 100%);
+    font-family: 'Archivo', sans-serif;
+/* font-family: 'Dancing Script', cursive; */
+
+display: grid;
+grid-template-areas: "cabecalho cabecalho cabecalho cabecalho"
+                     "principal principal principal principal"
+                     "rodape rodape rodape rodape";
+grid-template-rows: 2fr;
+                     
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+}
+
+.principal{
+    grid-area: principal;
+}
+
+.rodape{
+    grid-area: rodape;
+}
+
+.logo-vr{
+    width: 50%;
+}
+
+.cabecalho .cabecalho-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.cabecalho .cabecalho-video .titulo-cabecalho{
+    font-family: 'Gabarito', cursive;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.cabecalho .cabecalho-video .descricao-cabecalho{
+    font-size: 2rem;
+    width: 50%;
+    padding: 4rem 0;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 300;
+    color: rgb(229, 245, 8);
+    text-shadow:  1px 1px 5px black;
+}
+
+.cabecalho .cabecalho-video .subtitulo-cabecalho{
+    font-size: 4rem;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.cabecalho .cabecalho-video .video-cabecalho{
+    margin: 4rem 0;
+    width: 50%;
+}
+
+.cabecalho .cabecalho-video .botao-compra{
+    padding: 2rem 10rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 1rem;
+    background-color: rgb(18, 164, 248);
+    color: white;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 4rem;
+}
+
+.cabecalho .cabecalho-video .botao-compra:hover{
+    cursor: pointer;
+    scale: calc(1.1);
+    opacity: 0.7;
+}
+
+.container .sobre-produto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sobre-produto .explicacao-produto, .porque-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;                                                                                                                  
+    padding: 4rem;
+    width: 40%;
+    margin: 4rem auto;
+    background-color: white;
+    height: 650px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border-radius: 2rem;
+}
+.container .sobre-produto .explicacao-produto, .porque-produto,h2{
+    margin-bottom: 2rem;
+}
+
+.container .sobre-produto .explicacao-produto p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .sobre-produto .icon-explicacao{
+    width: 15%;
+    margin-bottom: 4rem;
+}
+
+.container .videos-produto .titulo-videos{
+    text-align: center;
+    font-size: 4rem;
+    padding: 6rem 0 0 0;
+   color: white;
+   font-family: 'Gabarito', cursive;
+}
+
+.container .videos-produto .descricao-videos{
+    font-size: 2rem;
+    text-align: center;
+    width: 60%;
+    margin: 4rem auto;
+    color: rgb(229, 245, 8);
+    line-height: 3rem;
+    text-shadow:  1px 1px 5px black;
+}
+
+.container .videos-produto .primeiro-video{
+   width: 20%;
+   margin: 0 10rem;
+   padding: 2rem;
+}
+
+.container .depoimentos .titulo-depoimentos{
+    font-size: 4rem;
+    text-align: center;
+    margin: 6rem 0;
+    color: white;
+    font-family: 'Gabarito', cursive;
+}
+
+.container .depoimentos .descricao-depoimentos{
+    font-size: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 4rem auto;
+    color: rgb(229, 245, 8);
+    line-height: 3rem;
+    text-shadow:  1px 1px 5px black;
+}
+
+.container .prints-homens, .prints-mulheres{
+    display: flex;
+    justify-content: center;
+}
+
+.container .depoimentos .imagem-depoimento{
+    width: 25%;
+    padding: 4rem;
+}
+
+.container .fotos-produto .titulo-fotos{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    padding: 6rem;
+    font-family: 'Gabarito', cursive;
+}
+
+.container .fotos-produto .lista-antes-e-depois{
+    display: flex;
+    text-align: center;
+    font-size: 4rem;
+    color: yellow;
+}
+
+.container .fotos-produto .lista-antes-e-depois .titulo-antes-e-depois{
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    text-shadow:  1px 1px 5px black;
+    
+}
+
+.container .fotos-produto .imagem-antes-e-depois{
+    width: 80%;
+    margin: 4rem 0;
+}
+
+.container .lista-perguntas{
+    width: 50%;
+    margin: 2rem auto;
+    background-color: rgb(114, 231, 247);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.container .lista-perguntas .pergunta{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.container .lista-perguntas .resposta{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: 300;
+    line-height: 2rem;
+    color: yellow;
+    text-shadow:  1px 1px 5px black;
+}
+
+.container .opcoes-compra .titulo-compra{
+    text-align: center;
+    font-weight: 600;
+    font-size: 5rem;
+    color: white;
+    margin: 10rem 0;
+    font-family: 'Gabarito', cursive;
+}
+
+.container .opcoes-compra .titulo-lista{
+    color: yellow;
+    margin-bottom: 4rem;
+    font-family: 'Gabarito', cursive;
+    text-shadow:  1px 1px 5px black;
+}
+
+.container .opcoes-compra .lista-compra{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .opcoes-compra .lista-compra .primeiro-produto, .segundo-produto, .terceiro-produto{
+    width: 60%;
+    
+}
+
+.container .opcoes-compra .lista-compra .produtos-compra{
+    margin: 4rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+}
+
+.container .opcoes-compra .lista-compra .produtos-compra .botao-compra-aqui{
+    background-color:rgb(18, 164, 248);
+    color: white;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin: 4rem;
+    transition: 0.3s ease-in-out;
+}
+
+.container .opcoes-compra .lista-compra .produtos-compra .botao-compra-aqui:hover{
+    cursor: pointer;
+    scale: calc(1.1);
+    opacity: 0.7;
+}
+
+.container .opcoes-compra .lista-compra .produtos-compra:last-child{
+    line-height: 4rem;
+}
+
+.container .opcoes-compra .vantagens .titulo-vantagens{
+    text-align: center;
+    color: white;
+}
+
+.container .opcoes-compra .vantagens .descricao-vantagens{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.container .compra-vr{
+    text-align: center;
+    padding: 6rem;
+}
+
+.container .compra-vr .gatilho-compra .titulo-gatilho{
+    color: yellow;
+    font-size: 3rem;
+    font-family: 'Gabarito', cursive;
+}
+
+.container .compra-vr .gatilho-compra .descricao-gatilho{
+    font-size: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.container .compra-vr .botao-compra .titulo-botao-compra{
+    color: yellow;
+    font-size: 3rem;
+    margin-top: 6rem;
+    font-family: 'Gabarito', cursive;
+}
+
+.container .compra-vr .botao-compra .botao-final{
+    background-color:rgb(18, 164, 248);
+    color: white;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .compra-vr .botao-compra .botao-final:hover{
+    cursor: pointer;
+    scale: calc(1.1);
+    opacity: 0.7;
+}
+
+.rodape{
+    text-align: center;
+    background-color: rgb(48, 131, 255);
+    padding: 8rem;
+}
+
+.rodape .titulo-rodape{
+    font-size: 2rem;
+    color: white;
+}
+
+.rodape .redes-sociais{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape .redes-sociais .icones{
+  margin: 4rem;
+  font-size: 3rem;
+}
+
+.rodape .redes-sociais .icones:nth-child(2){
+    font-size: 3.3rem;
+}
+
+.rodape .descricao-rodape{
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho .cabecalho-video .video-cabecalho{
+        width: 70%;
+    }
+
+    .cabecalho .cabecalho-video .descricao-cabecalho{
+        width: 80%;
+    }
+
+    .container .sobre-produto .explicacao-produto, .porque-produto{
+        height: 870px;
+    }
+
+    .container .videos-produto .videos{
+    display: flex;
+    }
+
+    .container .videos-produto .primeiro-video{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .container .depoimentos .imagem-depoimento{
+        width: 60%;
+    }
+
+    .container .prints-homens, .prints-mulheres{
+        flex-wrap: wrap;
+    }
+
+    .container .compra-vr .gatilho-compra .descricao-gatilho{
+        width: 80%;
+    }
+
+    .container .sobre-produto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .sobre-produto .explicacao-produto, .porque-produto{
+        width: 60%;
+        height: 60%;
+    }
+
+    .container .sobre-produto .explicacao-produto{
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .logo-vr{
+        width: 70%;
+    }
+
+    .cabecalho .cabecalho-video .titulo-cabecalho{
+        width: 50%;
+        font-size: 3rem;
+    }
+
+    .cabecalho .cabecalho-video .descricao-cabecalho{
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    .cabecalho .cabecalho-video .subtitulo-cabecalho{
+        font-size: 3rem;
+    }
+
+    .cabecalho .cabecalho-video .botao-compra{
+        font-size: 2rem;
+        padding: 2rem 5rem;
+    }
+
+    .container .sobre-produto .explicacao-produto, .porque-produto{
+        margin: 2rem 0;
+        width: 70%;
+    }
+
+    .container .sobre-produto .explicacao-produto, .porque-produto h2{
+        text-align: center;
+    }
+
+    .container .videos-produto .titulo-videos{
+        font-size: 3rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .container .videos-produto .descricao-videos{
+        font-size: 1.5rem;
+        width: 60%;
+    }
+
+    .container .videos-produto .videos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .videos-produto .primeiro-video{
+        width: 50%;
+        padding: 0;
+        margin: 2rem 0;
+    }
+
+    .container .depoimentos .imagem-depoimento{
+        padding: 0;
+        margin: 2rem 0;
+        width: 50%;
+    }
+
+    .container .depoimentos .titulo-depoimentos{
+        font-size: 3rem;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .container .depoimentos .descricao-depoimentos{
+        font-size: 1.5rem;
+        width: 60%;
+    }
+
+    .container .depoimentos .prints-homens, .prints-mulheres{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .fotos-produto .titulo-fotos{
+        font-size: 3rem;
+        padding: 0;
+        margin: 6rem 0;
+    }
+
+    .container .fotos-produto .lista-antes-e-depois{
+        flex-direction: column;
+    }
+
+    .container .fotos-produto .lista-antes-e-depois .titulo-antes-e-depois{
+        font-size: 2rem;
+    }
+
+    .container .fotos-produto .imagem-antes-e-depois{
+        width: 80%;
+    }
+
+    .container .lista-perguntas{
+        width: 80%;
+    }
+
+    .container .opcoes-compra .titulo-compra{
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .container .opcoes-compra .titulo-lista{
+        font-size: 2rem;
+    }
+
+    .container .opcoes-compra .lista-compra{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .opcoes-compra .lista-compra .produtos-compra{
+        margin:0;
+    }
+
+    .container .opcoes-compra .lista-compra .primeiro-produto, .segundo-produto, .terceiro-produto{
+        width: 80%;
+    }
+
+    .container .opcoes-compra .vantagens .descricao-vantagens{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .container .compra-vr{
+        padding: 0;
+    }
+
+    .container .compra-vr .gatilho-compra .titulo-gatilho{
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    .container .compra-vr .gatilho-compra .descricao-gatilho{
+        font-size: 1.5rem;
+    }
+
+    .container .compra-vr .botao-compra .titulo-botao-compra{
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    .container .compra-vr .botao-compra .botao-final{
+        font-size: 1.5rem;
+        padding: 2rem 4rem;
+    }
+
+    .rodape{
+        padding: 4rem 0;
+    }
+
+    .container .opcoes-compra .lista-compra .produtos-compra .botao-compra-aqui{
+        margin: 4rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
